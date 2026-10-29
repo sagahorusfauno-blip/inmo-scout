@@ -22,7 +22,7 @@ jobs:
       - name: Tests
         env:
           QT_QPA_PLATFORM: offscreen
-        run: pytest -q
+        run: pytest -v
 
       - name: Compilar con PyInstaller
         run: >

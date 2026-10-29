@@ -41,7 +41,7 @@ def test_analyze_yields():
 
 
 def test_pisos_parser():
-    items = parse_listing_page((FIX / "pisos_listado.html").read_text(), "venta", "Valencia")
+    items = parse_listing_page((FIX / "pisos_listado.html").read_text(encoding="utf-8"), "venta", "Valencia")
     assert len(items) == 2
     a, b = items
     assert a.external_id == "61234567890_100500"
